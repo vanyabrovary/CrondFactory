@@ -11,16 +11,14 @@ sub instantiate() {
 
 1;
 
+use strict;
 use FindBin qw/$Bin/;
 use lib "$Bin/../lib";
-
-use strict;
-
 
 my $name = shift or die( 'Bad crond file name!' );
 my $args = shift || 0;
 
-my $pkg = CrondFactory->instantiate( $name );
+my $pkg  = CrondFactory->instantiate( $name );
 
 &std_out( $pkg->execute( $args ) );
 
