@@ -35,7 +35,7 @@ sub std_out() {
 ##
 ## perl crond.pl Hello Ivanb
 ##
-## Hello - script nae lib/Crond/Hello.pm
+## Hello - script name lib/Crond/Hello.pm
 ## Ivanb - args for lib/Crond/Hello.pm
 ##
 
